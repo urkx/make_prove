@@ -2,17 +2,17 @@
 #
 #
 
-CC = gcc
+CC = g++
 OBJECTS = main.o
 
 main: $(OBJECTS)
 	$(CC) -o list main.o
 
-# main.o: main.c lib.h
-#	$(CC) -c main.c
+main.o: main.cpp lib.h
+	$(CC) -c main.cpp
 # make knows how to compile C files, 
 # so we can write just:
-main.o: lib.h
+#main.o: lib.h
 
 .PHONY : clean 
 clean:

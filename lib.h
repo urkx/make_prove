@@ -1,4 +1,5 @@
+template <typename T>
 struct List{
-	int primero;
-	int segundo;
+	T primero;
+	T segundo;
 };
