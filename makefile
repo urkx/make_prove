@@ -15,6 +15,9 @@ main.o: main.cpp lib.h
 # so we can write just:
 #main.o: lib.h
 
+
+# adding 'debug' to 'make' command will
+# add '-g' flag to 'g++' command
 debug: CC += -g
 debug: main
 
