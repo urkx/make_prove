@@ -7,21 +7,20 @@ struct List{
 class Gen{
 
 	public:
-		Gen(int id);
+		Gen(int i);
 		int getId();
-		void setId(int id);	
+		void setId(int i);	
 	private:
 		int id;
 };
-
-Gen::Gen(int id){
-	id = id;
+Gen::Gen(int i){
+	id = i;
 }
 
 int Gen::getId(){
 	return id;
 }
 
-void Gen::setId(int id){
-	id = id;
+void Gen::setId(int i){
+	id = i;
 }

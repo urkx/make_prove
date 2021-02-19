@@ -1,7 +1,6 @@
 #include <iostream>
 #include "lib.h"
 
-
 int main(){
 	struct List <double> l;
 	Gen g(1);
