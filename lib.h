@@ -35,6 +35,7 @@ void createImage(int width, int height)
 	out << "P3\n" << width << " " << height << "\n255\n";
 
 	 for (int j = height-1; j >= 0; --j) {
+		 std::cout << "\rScanlines remaining: " << j << ' ' << std::endl;
 	 	for (int i = 0; i < width; ++i) {
 			auto r = double(i) / (width-1);
 			auto g = double(j) / (height-1);
@@ -49,4 +50,5 @@ void createImage(int width, int height)
 	}
 
 	out.close();
+	std::cout << "\nDone!" << std::endl;
 }
